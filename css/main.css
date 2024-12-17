@@ -161,7 +161,7 @@ footer a:not(.nav-link) {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ */
-  backdrop-filter: blur(2px); /* Hiệu ứng làm mờ nền */
+  backdrop-filter: blur(1px); /* Hiệu ứng làm mờ nền */
   z-index: 1; /* Đảm bảo nằm trên ảnh nền */
 }
 
