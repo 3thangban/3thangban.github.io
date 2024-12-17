@@ -144,7 +144,7 @@ footer a:not(.nav-link) {
 /* Ảnh nền căn giữa và hiển thị đầy đủ */
 .cover {
   background: url('images/bground.jpg') no-repeat center center;
-  background-size: 100% 100%; /* Ảnh sẽ bị méo để phủ toàn bộ phần tử */
+  background-size: cover; /* Ảnh sẽ bao phủ hết phần tử mà không bị méo */
   height: 100vh; /* Chiều cao toàn màn hình */
   display: flex;
   justify-content: center; /* Căn giữa ngang */
