@@ -142,16 +142,18 @@ footer a:not(.nav-link) {
     page-break-before: always; } }
 
 .cover {
-  background: url('images/bground.jpg') no-repeat center center;
-  background-size: cover; /* Đảm bảo ảnh nền bao phủ toàn bộ màn hình */
-  height: 100vh; /* Chiều cao của phần này sẽ là 100% chiều cao màn hình */
-  width: 100%; /* Đảm bảo chiều rộng 100% */
+  background-image: url('images/bground.jpg'); /* Kiểm tra lại đường dẫn */
+  background-position: center center; /* Căn giữa ảnh */
+  background-size: cover; /* Đảm bảo ảnh phủ toàn bộ */
+  background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn trang */
+  height: 100vh; /* Chiều cao của phần tử sẽ bằng chiều cao màn hình */
+  width: 100%; /* Chiều rộng 100% */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0; /* Loại bỏ margin để không có viền ngoài */
-  padding: 0; /* Loại bỏ padding nếu có */
+  margin: 0; /* Loại bỏ margin */
+  padding: 0; /* Loại bỏ padding */
 }
 
 .mask {
@@ -170,8 +172,7 @@ footer a:not(.nav-link) {
 }
 
 .avatar img {
-  border-radius: 50%; /* Hình ảnh avatar tròn */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng cho ảnh avatar */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
