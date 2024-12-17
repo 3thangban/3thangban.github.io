@@ -141,38 +141,41 @@ footer a:not(.nav-link) {
     padding-top: 5rem;
     page-break-before: always; } }
 
+/* Ảnh nền căn giữa và hiển thị đầy đủ */
 .cover {
-  background-image: url('images/bground.jpg'); /* Kiểm tra lại đường dẫn */
-  background-position: center center; /* Căn giữa ảnh */
-  background-size: cover; /* Đảm bảo ảnh phủ toàn bộ */
-  background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn trang */
-  height: 80vh; /* Chiều cao của phần tử sẽ bằng chiều cao màn hình */
-  width: 80%; /* Chiều rộng 100% */
+  background: url('images/bground.jpg') no-repeat center center;
+  background-size: cover; /* Ảnh sẽ bao phủ hết phần tử */
+  height: 100vh; /* Chiều cao toàn màn hình */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
   position: relative;
-  margin: 0; /* Loại bỏ margin */
-  padding: 0; /* Loại bỏ padding */
+  overflow: hidden; /* Cắt phần thừa của ảnh nền */
 }
 
+/* Mask mờ với hiệu ứng nền */
 .mask {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ */
+  backdrop-filter: blur(2px); /* Hiệu ứng làm mờ nền */
+  z-index: 1; /* Đảm bảo nằm trên ảnh nền */
 }
 
-.text-center {
+/* Ảnh đại diện nằm chính giữa */
+.avatar {
   position: relative;
-  z-index: 2; /* Đảm bảo nội dung nằm trên lớp mờ */
+  z-index: 2; /* Nằm trên lớp mask */
 }
 
 .avatar img {
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; /* Làm tròn ảnh đại diện */
+  border: 4px solid #fff; /* Viền trắng */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Đổ bóng */
 }
 
