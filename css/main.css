@@ -146,8 +146,8 @@ footer a:not(.nav-link) {
   background-position: center center; /* Căn giữa ảnh */
   background-size: cover; /* Đảm bảo ảnh phủ toàn bộ */
   background-attachment: fixed; /* Giữ ảnh nền cố định khi cuộn trang */
-  height: 100vh; /* Chiều cao của phần tử sẽ bằng chiều cao màn hình */
-  width: 100%; /* Chiều rộng 100% */
+  height: 80vh; /* Chiều cao của phần tử sẽ bằng chiều cao màn hình */
+  width: 80%; /* Chiều rộng 100% */
   display: flex;
   justify-content: center;
   align-items: center;
