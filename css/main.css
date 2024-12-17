@@ -145,10 +145,13 @@ footer a:not(.nav-link) {
   background: url('images/bground.jpg') no-repeat center center;
   background-size: cover; /* Đảm bảo ảnh nền bao phủ toàn bộ màn hình */
   height: 100vh; /* Chiều cao của phần này sẽ là 100% chiều cao màn hình */
+  width: 100%; /* Đảm bảo chiều rộng 100% */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0; /* Loại bỏ margin để không có viền ngoài */
+  padding: 0; /* Loại bỏ padding nếu có */
 }
 
 .mask {
@@ -170,4 +173,5 @@ footer a:not(.nav-link) {
   border-radius: 50%; /* Hình ảnh avatar tròn */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng cho ảnh avatar */
 }
+
 
